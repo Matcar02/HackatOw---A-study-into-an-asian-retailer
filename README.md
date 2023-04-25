@@ -1,1 +1,1 @@
-This is the readme we will use for the project, just to clarify and expose what we did in the code and present the main steps.
+In this brief project, a colleague and I analyzed and predicted the customers behaviour of an asian healtcare retailer interested in assessing the effectiveness of its promotions and discounts.
