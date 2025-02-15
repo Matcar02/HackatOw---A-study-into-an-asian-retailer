@@ -1,70 +1,47 @@
-In this brief project, a colleague and I analyzed and predicted the customers behaviour of an asian healthcare retailer interested in assessing the effectiveness of its promotions and discounts.
-The notebook is split into 3 sections:
-1) Data cleaning and Prepration (wrangling).
-2) Promos and Discounts insights.
-3) Time-series Baseline sales forecasting.
+# Hackatow
 
+In this project, a colleague and I analyzed and predicted customer behavior for an Asian healthcare retailer. The retailer was interested in assessing the effectiveness of its promotions and discounts.
 
-The objectives and the tasks are explained below. The analysis is maninly focused on the performance of some products:
+The notebook is divided into three sections:
 
-**CONTEXT**
+1. Data Cleaning and Preparation (Wrangling)
+2. Promotions and Discounts Insights
+3. Time-Series Baseline Sales Forecasting
 
-• Oliver Wyman have been engaged by an Asian health and beauty retailer to help design a set of promotions in line with their existing promotional offering and long-term sustainability goals
+The objectives and tasks are explained below. The analysis primarily focuses on the performance of selected products.
 
-• The retailer has an online and offline (in store) presence in multiple countries across Asia but we have been engaged to focus on the Malaysian business unit and their offline promotions
+## Context
 
-• They have also asked to the team to focus on a subset of the products within a specific product category 
+- Oliver Wyman has been engaged by an Asian health and beauty retailer to help design a set of promotions in line with their existing promotional offerings and long-term sustainability goals.
+- The retailer operates both online and offline (in-store) across multiple countries in Asia. However, our focus is on the Malaysian business unit and its offline promotions.
+- The retailer has requested that the team focus on a subset of products within a specific product category.
+- To support the Oliver Wyman team, the client has shared multiple datasets to help us understand the current performance of their products and promotions. The client wants to transition to a more data-driven approach, as their category managers previously relied on industry expertise to set up promotions and campaigns without a coherent review of their effectiveness.
 
-• To support the Oliver Wyman team, the client has shared multiple datasets for us to understand the current performance of their products and the promotions they offer as they want to move towards a more data-driven approach. Previously individual category managers would rely on industry expertise to set up promotions and campaigns but 
-were unable to review the effectiveness of the promotions coherently across the business.
-The project was divided into different tasks, listed below:
+## Tasks
 
+As part of the new project team, you are the data and analytics consultant. Senior team members have tasked you with assessing the data shared by the client, conducting exploratory data analysis, and building a simple model to predict baseline product sales.
 
-**TASK**
+### More Defined Tasks
 
-You are working with the new project team and as the data and analytics consultant on the project, you have been asked by the senior members of the team to assess the data shared by the client, conduct exploratory data analysis and build a simple model to predict product baseline sales.
+#### 1. Data Assessment and Preparation
+- The local business teams have shared their entire transaction data history. However, some business teams rely on manual processes to create transaction data, affecting overall data quality.
+- Additional details on the datasets provided are available in Appendix A.
+- Examine the data and prepare it for further analysis and modeling.
+  - Identify data quality issues in each dataset.
+  - Assess whether values align with expectations.
+  - Evaluate any challenges in joining the datasets.
+- The leadership team is also interested in an overall assessment of data quality and recommendations for improvements. As the organization shifts to a more data-driven approach, what enhancements would make the data more useful?
 
-**More defined tasks**
+#### 2. Understanding Promotion Performance
+- The client wants a quantitative measure to assess the performance of products under promotion.
+- To achieve this, we must first establish the baseline sales performance of products without promotion. This will allow us to measure the effectiveness of promotions relative to the baseline.
+- A model must be trained to predict baseline sales without promotional activity. Key considerations include:
+  - Whether and how to include days with active promotions in the training data.
+  - Identifying external factors that influence consumer behavior beyond promotions (e.g., weekends, seasons, holidays, natural disasters) and how to incorporate them into the model (binary, numerical, categorical variables, etc.).
+  - Capturing long-term trends related to the product.
+- A common metric for measuring promotion effectiveness is elasticity—the relationship between the additional sales uplift and the discount offered. The client is interested in using elasticity as a consistent promotion performance metric.
 
-1) • The local business teams shared the transaction data for their entire 
-transaction data history. Unfortunately, some of the business teams use manual steps to create the transaction data, which impacts the overall quality of the data
-• Additional details on the datasets provided are available in Appendix A
-• Look at the data provided and prepare it so that it can be used for further analysis/modeling
-– What data quality issues exist in each dataset? Are values in line with expectations? Were there challenges in joining the datasets?
-• The leadership team is also interested in the overall quality of the data and would like an assessment of what things can be improved to make the data more useful as the organization looks to become a more data-driven organization. What recommendations for improving their existing data can you think of?
+**Note:** Due to confidentiality agreements, we cannot share the data.
 
+Hope you enjoy this project!
 
-2) • The local business teams shared the transaction data for their entire 
-transaction data history. Unfortunately, some of the business teams use 
-manual steps to create the transaction data, which impacts the overall 
-quality of the data
-• Additional details on the datasets provided are available in Appendix A
-• Look at the data provided and prepare it so that it can be used for 
-further analysis/modeling
-– What data quality issues exist in each dataset? Are values in line with 
-expectations? Were there challenges in joining the datasets?
-• The leadership team is also interested in the overall quality of the data 
-and would like an assessment of what things can be improved to make 
-the data more useful as the organization looks to become a more data-
-driven organization. What recommendations for improving their 
-existing data can you think of?
-
-
-3) • The client wants to be able to understand the performance of products under 
-promotion with a more quantitative measure
-• In order to do this, we need to first understand the performance of products 
-without promotion e.g., what is the baseline of sales without promotions, and then 
-measure how effective promotions are on top of this baseline
-• We will need to train a model to predict a baseline of sales without promotional 
-activity. During this process, you may need to consider
-– If or how to use days where a promotion is active in the training data
-– What other factors may influence consumer behavior beyond promotion 
-(e.g., weekends, seasons, holidays, natural disasters) and how they can 
-be appropriately captured as factors in the model (binary, numerical, 
-categorical etc.)
-– How to capture long-term trends connected to the product
-• A common metric to measure promotion effectiveness for a given product is 
-elasticity. This relates the additional uplift in sales gained to the discount given away 
-and the client is interested in using it as a consistent promotion performance metric
-
-It is not possible to share the data due to confidential agreements. Hope you enjoy!
